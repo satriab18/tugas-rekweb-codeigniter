@@ -9,14 +9,17 @@
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama" >
+                <small id="emailHelp" class="form-text text-danger"><?= form_error('nama');?></small>
             </div>
             <div class="form-group">
                 <label for="nrp">NRP</label>
                 <input type="text" class="form-control" id="nrp" name="nrp" >
+                <small id="emailHelp" class="form-text text-danger"><?= form_error('nrp');?></small>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" >
+                <small id="emailHelp" class="form-text text-danger"><?= form_error('email');?></small>
             </div>
             <div class="form-group">
                 <label for="jurusan">Jurusan</label>
@@ -34,12 +37,6 @@
             </button>
         </form>
         <br>
-        <br>
-            <?php if(validation_errors()) : ?>
-            <div class="alert alert-danger" role="alert">
-            <?=validation_errors();?>
-            </div>
-            <?php endif; ?>
         </div>
         </div>
     </div>
