@@ -34,11 +34,11 @@
                 </td>
             </tr>
                     <?php endif;   ?>
-                    <?php foreach ($peoples as $people) :?>
+                    <?php foreach($peoples as $ppl) : ?>
             <tr>
                 <td><?= ++$start; ?></td>
-                <td><?= ++$people['name']; ?></td>
-                <td><?= ++$people['email']; ?></td>
+                <td><?= ++$ppl['name']; ?></td>
+                <td><?= ++$ppl['email']; ?></td>
                 <td>
                     <a href="" class="badge badge-info">Detail</a>
                     <a href="" class="badge badge-success">Detail</a>
@@ -50,7 +50,7 @@
         </thead>
         </table>
 
-            <?= $this->pagination->creat_links(); ?>
+            <?= $this->pagination->create_links(); ?>
         </div>
     </div>
 
